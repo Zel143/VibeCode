@@ -1,0 +1,145 @@
+.settings-page {
+  padding: var(--space-lg);
+  padding-bottom: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.settings-header h1 { font-size: var(--font-2xl); font-weight: 700; }
+
+.settings-section {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.settings-section-title { font-size: var(--font-base); font-weight: 700; margin-bottom: var(--space-sm); }
+.settings-section-sub { font-size: var(--font-sm); color: var(--text-tertiary); margin-bottom: var(--space-md); }
+
+.settings-workout-options { display: flex; gap: var(--space-sm); }
+
+.settings-workout-btn {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--font-sm);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.settings-workout-btn.active {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--primary-500);
+  color: var(--primary-300);
+}
+
+.settings-goals { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+
+.settings-goal-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.settings-goal-btn.active {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--goal-color, var(--primary-500));
+  color: var(--text-primary);
+}
+
+.settings-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+}
+
+.settings-toggle-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.settings-toggle {
+  width: 48px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--bg-tertiary);
+  position: relative;
+  transition: all var(--transition-base);
+  border: 1px solid var(--border-light);
+}
+
+.settings-toggle.on {
+  background: var(--primary-600);
+  border-color: var(--primary-500);
+}
+
+.settings-toggle-knob {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.settings-toggle.on .settings-toggle-knob {
+  transform: translateX(20px);
+}
+
+.settings-danger { border-color: rgba(248, 113, 113, 0.2); }
+
+.settings-reset-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--accent-rose);
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+  transition: all var(--transition-fast);
+}
+
+.settings-reset-btn:hover { background: rgba(248, 113, 113, 0.2); }
+
+.settings-confirm p { font-size: var(--font-sm); color: var(--text-secondary); margin-bottom: var(--space-md); }
+.settings-confirm-btns { display: flex; gap: var(--space-sm); }
+
+.settings-delete-btn {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  background: #ef4444;
+  color: white;
+}

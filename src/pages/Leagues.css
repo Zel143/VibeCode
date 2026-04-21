@@ -1,0 +1,182 @@
+.leagues-page {
+  padding: var(--space-lg);
+  padding-bottom: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leagues-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.leagues-header h1 { font-size: var(--font-3xl); font-weight: 800; }
+
+.leagues-timer {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.leagues-current {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--gradient-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.leagues-tier-icon { font-size: 3rem; }
+.leagues-tier-info { flex: 1; }
+.leagues-tier-info h2 { font-size: var(--font-xl); font-weight: 700; }
+.leagues-tier-sub { font-size: var(--font-sm); color: var(--text-secondary); margin-top: 2px; }
+
+.leagues-rank {
+  text-align: center;
+}
+
+.leagues-rank-num {
+  font-size: var(--font-3xl);
+  font-weight: 900;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.leagues-xp-card { margin-bottom: var(--space-lg); }
+
+.leagues-xp-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+.leagues-xp-val { font-weight: 700; color: var(--accent-cyan); }
+
+.leagues-xp-bar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.leagues-xp-fill {
+  height: 100%;
+  background: var(--gradient-xp);
+  border-radius: var(--radius-full);
+}
+
+.leagues-xp-next {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-xs);
+}
+
+.leagues-board { margin-bottom: var(--space-lg); }
+
+.leagues-board-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.leagues-board-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.leagues-player {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  transition: all var(--transition-fast);
+}
+
+.leagues-player.is-user {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid var(--border-accent);
+}
+
+.leagues-player.zone-promotion { border-left: 3px solid var(--accent-emerald); }
+.leagues-player.zone-demotion { border-left: 3px solid var(--accent-rose); }
+.leagues-player.zone-safe { border-left: 3px solid transparent; }
+
+.leagues-player-rank {
+  width: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+.leagues-player-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.leagues-player.is-user .leagues-player-avatar {
+  box-shadow: 0 0 0 2px var(--primary-400);
+}
+
+.leagues-player-name {
+  flex: 1;
+  font-weight: 500;
+  font-size: var(--font-sm);
+}
+
+.leagues-you-badge {
+  font-size: 10px;
+  padding: 1px 6px;
+  background: var(--primary-600);
+  border-radius: var(--radius-full);
+  color: white;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.leagues-player-xp {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.leagues-player-zone { display: flex; align-items: center; }
+
+.leagues-legend {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+}
+
+.leagues-legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+}

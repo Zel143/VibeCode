@@ -1,0 +1,250 @@
+.today-page {
+  padding: var(--space-lg);
+  padding-bottom: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.today-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+  padding-top: var(--space-md);
+}
+
+.today-greeting {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+.today-name {
+  font-size: var(--font-3xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.today-streak {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(239, 68, 68, 0.1));
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  border-radius: var(--radius-full);
+}
+
+.today-streak-flame {
+  color: #f97316;
+  animation: flame 1s ease-in-out infinite;
+  display: flex;
+}
+
+.today-streak-count {
+  font-size: var(--font-xl);
+  font-weight: 800;
+  color: #f97316;
+}
+
+.today-quick-stats {
+  display: flex;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.today-stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+.today-section {
+  margin-bottom: var(--space-xl);
+}
+
+.today-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.today-section-header h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+}
+
+.today-badge-done {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  padding: 2px 10px;
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--accent-emerald);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.today-badge-cat {
+  font-size: var(--font-lg);
+}
+
+/* Workout Card */
+.today-workout-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--border-accent);
+  transition: all var(--transition-base);
+}
+
+.today-workout-card:hover {
+  border-color: var(--primary-400);
+  box-shadow: var(--shadow-glow);
+}
+
+.today-workout-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-card);
+  opacity: 0.8;
+}
+
+.today-workout-content {
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.today-workout-games {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.today-workout-game {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+}
+
+.today-workout-emoji {
+  font-size: var(--font-xl);
+}
+
+.today-workout-gname {
+  flex: 1;
+  font-weight: 500;
+}
+
+.today-workout-check {
+  color: var(--accent-emerald);
+  font-weight: 700;
+}
+
+.today-workout-btn {
+  width: 100%;
+}
+
+/* Puzzle */
+.today-puzzle-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.today-puzzle-q {
+  font-size: var(--font-xl);
+  font-weight: 700;
+}
+
+.today-puzzle-input-wrap {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.today-puzzle-input {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+}
+
+.today-puzzle-btn {
+  padding: var(--space-sm) var(--space-lg);
+  min-height: auto;
+}
+
+.today-puzzle-hint {
+  font-size: var(--font-sm);
+  color: var(--text-tertiary);
+}
+
+.today-puzzle-result {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.today-puzzle-result.correct {
+  background: rgba(52, 211, 153, 0.1);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.today-puzzle-result.wrong {
+  background: rgba(248, 113, 113, 0.1);
+  color: var(--accent-rose);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+/* Word of the Day */
+.today-word-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.today-word {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.today-word-def {
+  color: var(--text-secondary);
+  font-size: var(--font-base);
+}
+
+.today-word-usage {
+  font-style: italic;
+  color: var(--text-tertiary);
+  font-size: var(--font-sm);
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--border-accent);
+}
+
+/* Games row */
+.today-games-row {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  scrollbar-width: none;
+}
+
+.today-games-row::-webkit-scrollbar {
+  display: none;
+}
+
+.today-spacer {
+  height: var(--space-xl);
+}
